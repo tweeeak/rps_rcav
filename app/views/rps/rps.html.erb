@@ -1,0 +1,39 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8"><div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
+      <a href="http://localhost:3000/rock" class="btn btn-default <%= @nav_r%>">Play Rock</a>
+      <a href="http://localhost:3000/paper" class="btn btn-default <%= @nav_p%>">Play Paper</a>
+      <a href="http://localhost:3000/scissors" class="btn btn-default <%= @nav_s%>">Play Scissors</a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-offset-2 col-md-4">
+    <div class="panel panel-default panel-success">
+      <div class="panel-heading"><p><%= @player.capitalize %></p></div>
+      <div class="panel-body">
+       <img class="img-responsive" src="/assets/images/<%= @player %>.png">
+     </div>
+   </div>
+ </div>
+ <div class="col-md-4">
+
+  <div class="panel panel-default panel-danger">
+    <div class="panel-heading "><p><%= @computer.capitalize %></p></div>
+    <div class="panel-body">
+      <img class="img-responsive" src="/assets/images/<%= @computer %>.png">
+    </div>
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-offset-2 col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-body pnl">
+        <a class="btn btn-default btn-group-justified btncst <%= @r%>"><h1><%= @results %></h1></a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
